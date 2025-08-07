@@ -20,7 +20,7 @@ import vlc
 instance = vlc.Instance()
 player = instance.media_player_new()
 
-HOST = '192.168.100.19'
+HOST = '192.168.100.1' #server ip
 VIDEO_PORT = 1337
 AUDIO_PORT = 1338
 
@@ -232,3 +232,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
