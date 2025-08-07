@@ -6,9 +6,11 @@ HOST = '0.0.0.0'
 VIDEO_PORT = 1337
 AUDIO_PORT = 1338
 
-video_file = 'video/video.txt'
-audio_file = 'video/audio.mp3'
-fps_file = 'video/fps.txt'
+path = 'video'
+
+video_file = path+'/video.txt'
+audio_file = path+'/audio.mp3'
+fps_file = path+'/fps.txt'
 
 frames = open(video_file, 'r', encoding='utf-8').read().split('qwerty')
 fps = float(open(fps_file, 'r').read())
